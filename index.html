@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GEOLOCALOZACIÓN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body>
+  <section>
+    <nav>
+      <div class="nav-wrapper #bbdefb blue lighten-4">
+       <div class="row">
+       <div class="col s12 m8"> 
+        <div class="col s3 m3">
+          <input placeholder="Punto de Partida" id="punto-partida" type="text" class="input-field">
+        </div>
+        <div class="col s3 m3">
+          <input placeholder="Destino" id="punto-destino" type="text" class="input-field">
+        </div>
+        <div class="col s3 m3">
+          <button class="btn " id="trazar-ruta">TRAZAR RUTA</button>
+        </div>
+        <div class="col s3 m3">
+          <button class="btn" id="encuentrame">Encuéntrame</button>
+        </div> 
+        </div>
+        </div> 
+        </div>
+    </nav>
+    <div class="row">
+      <div class="col s12 m12 l12" id="map">
+        
+      </div>
+    </div>
+  </section>
+  <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBNq_UtOGDu7Veg1yGzIgG4nJJ6Umv6o8M&callback=initMap&libraries=places"></script><!--despues de key y antes de & callback va nuestra key que pedimos en google-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
